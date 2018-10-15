@@ -1,0 +1,153 @@
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+@font-face {
+  font-family: pixelated;
+  src: url("../font/Fairfax.ttf");
+}
+/* MODAL */
+.modal{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	display: flex;
+	
+	animation: modal 1s 1s forwards;
+	visibility: hidden;
+	opacity: 0;
+}
+.contenido{
+	width: 40%;
+	height: 40%;
+	margin: auto;
+	background: white;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.boton{
+	width: auto;
+	height: auto;
+	border-radius: 5px;
+	background-color: #64cdf5;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.gender{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+@keyframes modal {
+	100% {
+		visibility: visible;
+		opacity: 1;
+	}
+}
+
+
+
+/* PAGINA */
+
+
+.pagecontainer{
+	width: 100%;
+	height: 100vh;
+	background-color: #66686b;
+}
+
+.nav{
+	width: 100%;
+	height: 15%;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	color: white;
+}
+.navOpt{
+	width: 80%;
+	height: 40%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+
+.title{
+	width: 100%;
+	height: 60%;
+	text-align: center;
+	height: auto;
+	font-family: pixelated;
+	font-size: 40px;
+	margin: 10px 10px;
+}
+
+.opt{
+	width: 19%;
+	height: 100%;
+	color: white;
+	font-family: pixelated;
+	border-radius: 5px 5px 0px 0px;
+	font-size: 23px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+}
+
+.home{	background-color: #8BC43F;	}
+
+.abUs{	background-color: #F61E7C;	}
+
+.MyV{	background-color: #52AFE3;	}
+
+.Cont{	background-color: #F9AE41;	}
+
+.Port{	background-color: #6A2A91;	}
+
+.contentContainer{
+	width: 100%;
+	height: 85%;
+	background-color: black;
+
+}
+
+.contentContainer div{
+	width: 92%;
+	height: 95%;
+	margin: auto;
+	border-radius: 5px;
+}
+
+#content{
+	width: 90%;
+	height: 90%;
+	background-color: white;
+	border-radius: 4px;
+	margin: auto;
+}
+
+.flex{
+	display: flex;
+}
+
+.hide{
+	display: none;	
+}
