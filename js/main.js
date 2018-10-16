@@ -19,7 +19,9 @@ function ShowIt(tab, content) {
 			$(content).removeClass("hide");
 			$(content).addClass(" flex");
 			$(content).siblings().removeClass("flex");
-			$(content).siblings().addClass("hide")
+			$(content).siblings().addClass("hide");
+			$(tab).addClass("clicked");
+			$(tab).siblings().removeClass("clicked")
 		}
 	})	
 }
